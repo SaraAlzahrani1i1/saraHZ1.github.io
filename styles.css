@@ -330,62 +330,7 @@ p, ul, li {
 .submenu-item:hover {
   background: #b3d8ff;
 }
-/* Why Dolf styles */
-.whydolf-header {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 32px;
-  margin-top: 12px;
-}
-.whydolf-icon {
-  font-size: 2.2em;
-  color: #4aa6f2;
-}
-.whydolf-title {
-  font-size: 2.2em;
-  font-weight: bold;
-  color: #2196f3;
-  letter-spacing: 0.5px;
-}
-.whydolf-cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
-}
-@media (max-width: 900px) {
-  .whydolf-cards {
-    grid-template-columns: 1fr;
-  }
-}
-.whydolf-card {
-  background: #393b3f;
-  border-radius: 16px;
-  padding: 28px 28px 20px 28px;
-  color: #fff;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.13);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; 
-  min-height: 160px;
-  position: relative;
-}
-.whydolf-logo {
-  width: 38px;
-  height: 38px;
-  margin-bottom: 12px;
-  filter: brightness(0) invert(1) drop-shadow(0 0 6px #2196f3cc);
-}
-.whydolf-card-title {
-  font-size: 1.3em;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #fff;
-}
-.whydolf-card-desc {
-  color: #bfc3c9;
-  font-size: 1.08em;
-}
+
 
 /* Show only the first 4 menu items when the sidebar is collapsed */
 .sidebar.collapsed .sidebar-content ul > li:nth-of-type(n+5) {

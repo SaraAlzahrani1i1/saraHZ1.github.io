@@ -370,8 +370,46 @@ const sections = {
     `
   },
   whydolf: {
-    title: 'Why Dolf ?',
-    desc: '' // not done yet
+    title: 'Why Dolf?',
+    desc: `<p style="font-size: 1.2em; color: #333; margin-bottom: 32px; text-align: center;">Discover what makes Dolf Technologies the preferred choice for digital transformation solutions.</p>
+    
+    <div class="dolf-services-section">
+      <div class="dolf-services-card">
+        <div class="dolf-services-card-title">🎯 Customized Solutions</div>
+        <div class="dolf-services-badges">
+          <span class="service-badge">Tailored Approach</span>
+          <span class="service-badge">Client-Specific</span>
+          <span class="service-badge">Maximum Impact</span>
+        </div>
+      </div>
+      
+      <div class="dolf-services-card">
+        <div class="dolf-services-card-title">🏆 Proven Expertise</div>
+        <div class="dolf-services-badges">
+          <span class="service-badge">17+ Years</span>
+          <span class="service-badge">Reliable Solutions</span>
+          <span class="service-badge">Enduring Results</span>
+        </div>
+      </div>
+      
+      <div class="dolf-services-card">
+        <div class="dolf-services-card-title">🚀 Innovative Leadership</div>
+        <div class="dolf-services-badges">
+          <span class="service-badge">Cutting-Edge Tech</span>
+          <span class="service-badge">Future-Ready</span>
+          <span class="service-badge">Digital Excellence</span>
+        </div>
+      </div>
+      
+      <div class="dolf-services-card">
+        <div class="dolf-services-card-title">🤝 Client-Centric Approach</div>
+        <div class="dolf-services-badges">
+          <span class="service-badge">Trust Building</span>
+          <span class="service-badge">Collaboration</span>
+          <span class="service-badge">Goal Alignment</span>
+        </div>
+      </div>
+    </div>`
   },
   contact: {
     title: 'Contact Us',
@@ -553,40 +591,8 @@ document.querySelectorAll('.menu-item').forEach(item => {
         if(vid) { vid.play(); }
       }, 100);
     } else if(section === 'whydolf') {
-      mainContent.innerHTML = `<div class='card'>
-        <div style="text-align: center; margin-bottom: 32px;">
-          <h2 style="font-size: 2.2em; margin-bottom: 16px; color: #1976d2;">🖐️ Why Dolf?</h2>
-          <p style="font-size: 1.2em; color: #333; margin-bottom: 24px;">Discover what makes Dolf Technologies the preferred choice for digital transformation solutions.</p>
-        </div>
-        
-        <div class="contact-details" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-bottom: 32px;">
-          <div class="contact-card" style="background: #f8f9fa; border-radius: 12px; padding: 24px; border-left: 4px solid #2196f3;">
-            <div style="font-size: 1.3em; margin-bottom: 8px;">🎯</div>
-            <div style="font-weight: 600; color: #1976d2; margin-bottom: 8px;">Customized Solutions</div>
-            <div style="color: #333;">Tailoring solutions to meet clients' specific needs for maximum impact and value</div>
-          </div>
-          
-          <div class="contact-card" style="background: #f8f9fa; border-radius: 12px; padding: 24px; border-left: 4px solid #2196f3;">
-            <div style="font-size: 1.3em; margin-bottom: 8px;">🏆</div>
-            <div style="font-weight: 600; color: #1976d2; margin-bottom: 8px;">Proven Expertise</div>
-            <div style="color: #333;">Leveraging over 17 years of experience to deliver reliable and enduring digital solutions</div>
-          </div>
-          
-          <div class="contact-card" style="background: #f8f9fa; border-radius: 12px; padding: 24px; border-left: 4px solid #2196f3;">
-            <div style="font-size: 1.3em; margin-bottom: 8px;">🚀</div>
-            <div style="font-weight: 600; color: #1976d2; margin-bottom: 8px;">Innovative Leadership</div>
-            <div style="color: #333;">Investing in cutting-edge technologies to keep clients ahead in a fast-changing digital world</div>
-          </div>
-          
-          <div class="contact-card" style="background: #f8f9fa; border-radius: 12px; padding: 24px; border-left: 4px solid #2196f3;">
-            <div style="font-size: 1.3em; margin-bottom: 8px;">🤝</div>
-            <div style="font-weight: 600; color: #1976d2; margin-bottom: 8px;">Client-Centric Approach</div>
-            <div style="color: #333;">Building trust through close collaboration and aligning solutions with clients' goals</div>
-          </div>
-        </div>
-        
-        ${createContinueButton('whydolf')}
-      </div>`;
+      const data = sections[section];
+      mainContent.innerHTML = `<div class='card'><h2>${data.title}</h2>${data.desc}${createContinueButton(section)}</div>`;
     } else if(section === 'locations') {
       mainContent.innerHTML = `<div class='card'>
         <h2 style="font-size:2em;margin-bottom:8px;"><span style="font-size:1.2em;">📍</span> Dolf Headquarters Map</h2>
