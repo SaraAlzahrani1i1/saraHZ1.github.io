@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DolfTech Learning Portal</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+  <div class="header">
+    <div class="header-title">DolfTech Learning Portal</div>
+    <img src="assets/logo2.png" alt="Dolf Technologies Company Logo" class="header-logo" />
+    <div class="header-gradient"></div>
+  </div>
+  <div class="container">
+    <div class="sidebar" id="sidebar">
+      <div class="menu-header">
+        <strong style="flex:1;text-align:center;">COURSE MENU</strong>
+        <button id="toggleSidebar" class="toggle-btn">▲</button>
+      </div>
+      <div class="sidebar-content" id="sidebarContent">
+        <ul>
+          <li class="menu-item" data-section="welcome"><span>👋</span><span class="menu-text">Welcome to DolfTech</span></li>
+          <li class="menu-item" data-section="team"><span>🧑‍💼</span><span class="menu-text">Who Are We ?</span></li>
+          <li class="menu-item" data-section="values"><span>🗂</span><span class="menu-text">Company Values</span></li>
+          <li class="menu-item" data-section="internaltools"><span>🛠</span><span class="menu-text">Dolf's Services</span></li>
+          <li class="menu-item" data-section="whydolf"><span>🧠</span><span class="menu-text">Why Dolf?</span></li>
+          <li class="menu-item" data-section="companytourvideo"><span>🎬</span><span class="menu-text">Company Tour Video</span></li>
+          <li class="menu-item" data-section="platformdemo"><span>🎥</span><span class="menu-text">DolfTech Platform Demo</span></li>
+          <li class="menu-item quiz-dropdown-item" id="quizDropdownMenu" style="display:flex;flex-direction:column;align-items:flex-start;position:relative;">
+            <span id="quizDropdownToggle" style="display:flex;align-items:center;width:100%;cursor:pointer;">
+              <span style="font-size:1.2em;margin-right:8px;color:#e5397b;">❓</span>
+              <span class="menu-text">Quizzes</span>
+            </span>
+            <ul id="quizSubmenu" class="quiz-submenu" style="display:none;width:100%;padding-left:24px;margin:0;">
+              <li class="submenu-item" data-quiz="1">Quiz 1: DolfTech Focus</li>
+              <li class="submenu-item" data-quiz="2">Quiz 2: Company Values</li>
+              <li class="submenu-item" data-quiz="3">Quiz 3: Experience</li>
+              <li class="submenu-item" data-quiz="4">Quiz 4: Company Mission</li>
+            </ul>
+          </li>
+          <li class="menu-item" data-section="locations"><span>📍</span><span class="menu-text">Dolf Headquarters Map</span></li>
+          <li class="menu-item" data-section="contact"><span>📧</span><span class="menu-text">Contact Us</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-content" id="mainContent">
+      <div class="card"> 
+        <h1>Welcome to DolfTech Learning Portal</h1>
+        <p>Select a menu item to get started.</p>   
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="main.js"></script>
+</body>
+</html> 
