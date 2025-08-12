@@ -376,20 +376,48 @@ const sections = {
   contact: {
     title: 'Contact Us',
     desc: `
-      <div class="contact-section">
-        <h2>Contact Us</h2>
-        <div class="contact-intro">
-          Feel free to reach out to us.<br>
-          <span class="contact-bold">Our team is ready to assist you with any inquiries or needs you may have.</span>
+      <div style="text-align: center; margin-bottom: 32px;">
+        <h2 style="font-size: 2.2em; margin-bottom: 16px; color: #1976d2;">📧 Contact Us</h2>
+        <p style="font-size: 1.2em; color: #333; margin-bottom: 24px;">Feel free to reach out to us. Our team is ready to assist you with any inquiries or needs you may have.</p>
+      </div>
+      
+      <div class="contact-details" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-bottom: 32px;">
+        <div class="contact-card" style="background: #f8f9fa; border-radius: 12px; padding: 24px; border-left: 4px solid #2196f3;">
+          <div style="font-size: 1.3em; margin-bottom: 8px;">🌐</div>
+          <div style="font-weight: 600; color: #1976d2; margin-bottom: 8px;">Website</div>
+          <div style="color: #333;">www.dolftech.com</div>
         </div>
-        <div class="contact-details">
-          <div class="contact-row"><span class="contact-label">Website</span> <span class="contact-value">www.dolftech.com</span></div>
-          <div class="contact-row"><span class="contact-label">Phone</span> <span class="contact-value">+966138829411<br>+966138829014<br>+966548161616</span></div>
-          <div class="contact-row"><span class="contact-label">Email</span> <span class="contact-value">humidi@dolftech.com<br>info@dolftech.com</span></div>
-          <div class="contact-row"><span class="contact-label">Social Media</span> <span class="contact-value"><span class="contact-social-icon">in</span> DolfTech<br><span class="contact-social-icon">X</span> DolfLtd</span></div>
+        
+        <div class="contact-card" style="background: #f8f9fa; border-radius: 12px; padding: 24px; border-left: 4px solid #2196f3;">
+          <div style="font-size: 1.3em; margin-bottom: 8px;">📞</div>
+          <div style="font-weight: 600; color: #1976d2; margin-bottom: 8px;">Phone</div>
+          <div style="color: #333;">
+            +966138829411<br>
+            +966138829014<br>
+            +966548161616
+          </div>
+        </div>
+        
+        <div class="contact-card" style="background: #f8f9fa; border-radius: 12px; padding: 24px; border-left: 4px solid #2196f3;">
+          <div style="font-size: 1.3em; margin-bottom: 8px;">✉️</div>
+          <div style="font-weight: 600; color: #1976d2; margin-bottom: 8px;">Email</div>
+          <div style="color: #333;">
+            humidi@dolftech.com<br>
+            info@dolftech.com
+          </div>
+        </div>
+        
+        <div class="contact-card" style="background: #f8f9fa; border-radius: 12px; padding: 24px; border-left: 4px solid #2196f3;">
+          <div style="font-size: 1.3em; margin-bottom: 8px;">📱</div>
+          <div style="font-weight: 600; color: #1976d2; margin-bottom: 8px;">Social Media</div>
+          <div style="color: #333;">
+            <span style="background: #0077b5; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.9em; margin-right: 8px;">in</span> DolfTech<br>
+            <span style="background: #1da1f2; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.9em; margin-right: 8px;">X</span> DolfLtd
+          </div>
         </div>
       </div>
-      <div style="text-align:center; margin-top: 40px;">
+      
+      <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e0e0e0;">
         <button class="continue-btn" onclick="navigateToSection('welcome')">Go to Home</button>
       </div>
     `
